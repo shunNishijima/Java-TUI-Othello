@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"othello.Exception"},{"l":"othello.model"},{"l":"othello.model.ai"},{"l":"othello.model.client"},{"l":"othello.model.game"},{"l":"othello.model.server"},{"l":"othello.model.ui"},{"l":"othello.server"}]
