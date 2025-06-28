@@ -1,0 +1,136 @@
+
+
+import java.util.Scanner;
+
+public class HotelTUI {
+    private Hotel hotel;
+    private String gname;
+
+
+    public HotelTUI(String name){
+        this.hotel = new Hotel(name);
+        this.run(this);
+    }
+
+    public String parseCommand(String command)
+    {
+        command = command.toLowerCase();
+        String[] split = command.split("\\s+");
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 1; i < split.length; i++)
+        {
+            sb.append(split[i]+" ");
+            System.out.println(sb);
+        }
+
+        gname = sb.toString();
+        return split[0];
+    }
+
+
+    public Hotel getHotel()
+    {
+        return this.hotel;
+    }
+
+
+    public void run(HotelTUI hotel) {
+        boolean running = true;
+        while (running) {
+            System.out.println("Welcome to the Hotel management system of the \" Hotel Twente \"\n" +
+                    "Commands :\n" +
+                    "in name ................. check in guest with name\n" +
+                    "out name ................ check out guest with name\n" +
+                    "room name ............... request room of guest with name\n" +
+                    "activate name ........... activate safe of guest with name\n" +
+                    "help .................... help ( this menu )\n" +
+                    "print ................... print state\n" +
+                    "exit .................... exit\n");
+            Scanner input = new Scanner(System.in);
+            String option = this.parseCommand(input.nextLine());
+            switch (option) {
+                case "in":
+
+                   Room r =  this.hotel.checkIn(this.gname);
+
+                   if (r == null)
+                   {
+                       System.out.println("The hotel is full!");
+                   }
+                   else
+                   {
+                       System.out.println("Guest "+gname+" successfully checked in to"+ " "+this.hotel.getRoom(gname));
+                   }
+
+                    break;
+
+                case "out":
+                   Room g = this.hotel.getRoom(gname);
+                   if (g == null)
+
+                   {
+                       System.out.println("Guest is not in the system.");
+                   }
+                   else
+                   {
+                       System.out.println("Guest "+gname+" successfully checked out of room "+g);
+                       this.hotel.checkOut(gname);
+                   }
+
+
+                    break;
+
+                case "room":
+
+                    if (this.hotel.getRoom(gname) == null)
+                    {
+                        System.out.println("Guest "+gname+" does not have a room.");
+                    }else {
+                        System.out.println("Guest " + gname + " is in "+this.hotel.getRoom(gname));
+                    }
+                    break;
+
+                case "activate":
+                    if (this.hotel.getRoom(gname)!=null)
+                    {
+                        this.hotel.getRoom(gname).getSafe().activate();
+                        System.out.println("Safe activated!");
+
+                    }
+                    else
+                    {
+                        System.out.println("Guest "+gname+" does not have a room.");
+                    }
+
+                    break;
+                case "help":
+
+                    System.out.println("Welcome to the Hotel management system of the \" Hotel Twente \"\n" +
+                            "Commands :\n" +
+                            "in [name] ................. check in guest with name\n" +
+                            "out [name] ................ check out guest with name\n" +
+                            "room [name] ............... request room of guest with name\n" +
+                            "activate [name] ........... activate safe of guest with name\n" +
+                            "help .................... help ( this menu )\n" +
+                            "print ................... print state\n" +
+                            "exit .................... exit\n");
+
+
+                    break;
+
+                case "print":
+
+                    System.out.println(this.getHotel().toString());
+
+                    break;
+
+                case "exit":
+                    running = false;
+                    break;
+
+            }
+        }
+    }
+
+}

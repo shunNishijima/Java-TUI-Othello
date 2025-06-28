@@ -1,0 +1,8 @@
+othello.Exception
+othello.model
+othello.model.ai
+othello.model.client
+othello.model.game
+othello.model.server
+othello.model.ui
+othello.server

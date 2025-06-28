@@ -1,0 +1,27 @@
+Client:
+- sends to check if move valid
+
+
+Server:
+- responds if move valid
+- keeps track of game state
+- can give hints for possible moves(?)
+- multiple servers on same computer
+- one server supports many players at once
+
+Initializing Connection:
+- client requests server by IP
+- client chooses a unique username 
+- server requests port number
+- if port taken ask again
+
+Additional Functionality:
+- strictly stick to predefined protocol
+- after game is finished a new one should be able to start immidiately 
+- no need to reestablish connection 
+- never crash
+- should handle random errors
+- if connection breaks, tell user and then exit 
+
+
+

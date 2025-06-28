@@ -1,0 +1,113 @@
+D1.1
+Example: Coffee machine: S-system - users selects drink, machine makes the drink following given
+recipe
+• An automatic sudoku solver.
+S-System
+• An interactive sudoku playing app.
+P-System
+• A student calendar app with scheduled lectures.
+P-System
+• The Tarp learning management system (p. 13).
+E-System
+• Untappd (a social network that tracks which beer you drank and shares it to your friends).
+E-System
+• Airbnb
+E-System
+• A PDF reader.
+P-System
+• A compiler for a textual programming language like Java.
+P-System
+• A compiler for a graphical modelling language like UML.
+P-System
+• An augmented reality set.
+E-System
+
+D1.2
+Example: Coffee machine: No changes, as it is already an S-system.
+• An automatic sudoku solver: No changes, as it is already an S-system.
+• An interactive sudoku playing app.: make it automatic sudoku solver. 
+• A student calendar app with scheduled lectures.: the program changed can only show lecture's schedule.
+• The Tarp learning management system (p. 13).: the program changed only show the progress of online lecture.
+• Untappd (a social network that tracks which beer you drank and shares it to your friends).: changed program can only count how much beer a user drank.
+• Airbnb: changed program can only show information of house which a user has.
+• A PDF reader.: it only can read the PDF.
+• A compiler for a textual programming language like Java.: it works for only one version of Java. works perfectly everytime. it will not be updated.
+• A compiler for a graphical modelling language like UML.: it works for only one version. works perfectly everytime. it will not be updated.
+• An augmented reality set.: it shows one picture everytime and the picture is static.
+
+
+D1.3
+Example: Coffee machine: some account management system could be implemented such that the
+machine keeps track of customer’s previous orders and can recommend new drinks based on this data
+
+• An automatic sudoku solver.: same as below.
+• An interactive sudoku playing app. : it has function which shows ranking of online multiplayer.
+• A student calendar app with scheduled lectures.: users can put attendency in calendar and every user can see it.
+• The Tarp learning management system (p. 13). : No changes, as it is already an E-system.
+• Untappd (a social network that tracks which beer you drank and shares it to your friends).: No changes, as it is already an E-system.
+• Airbnb: No changes, as it is already an E-system.
+• A PDF reader.: we can share the links of the PDF and we can edit online.
+• A compiler for a textual programming language like Java.: users can edit the function of compiler and edit answers of compiler when it worked incorrectly.
+• A compiler for a graphical modelling language like UML.: same as above.
+• An augmented reality set.: No changes, as it is already an E-system.
+
+D1.4
+Example:
+Coffee machine -> Prescriptive model : recipe tells the machine how to make the drinks
+Washing machine -> Descriptive model: manual teaches users how to operate the machine
+*project -> Predictive model : effort estimation predict how much time will be needed to successfully design the system
+
+A PDF reader. -> Prescriptive Model: the program of the reader tells the machine how the objective is seen.
+A student calendar app with scheduled lectures. -> Descriptive Model : tha manual explain how to add events and how to use several views of calender.
+Airbnb -> Predictive Model : This systems can recommend suggestion to the users accoding to user history. 
+
+
+D1.5
+Example:
+Coffee machine
+1. As a user, I want to be able to see the list of available drinks from the machine, so I can decide
+which drink I want
+2. As a user, I want to be able to make cashless payments, so I do not need to bring cash with me
+
+• An interactive sudoku playing app.
+1.1
+As a user, I want to see level of each sudoku questions, so I can decide which question I try.
+1.1
+• An augmented reality set.
+As a user, I want to be able to see menu panel, so I can change the setting.
+1.2
+• An automatic sudoku solver: No changes, as it is already an S-system.
+As a user, I want to be able to see the start buttom, so I can start.
+1.3
+• Untappd (a social network that tracks which beer you drank and shares it to your friends).: No changes, as it is already an E-system.
+As a user, I want to see the map, so I can find beer shops.
+1.1
+- A student calendar app with scheduled lectures
+ " As a student I want to have a calendar app synchronized with my lectures, so that I can organize my study time."
+- Airbnb
+ " As a traveling person, I want to have an online tool for short term real estate renting, so that I can have a place to stay during my travels"
+- Untapped (Unchanged)
+" As a beer drinker I want to have a tool for sharing my consumption levels to brag to other fellow beer drinkers"
+1.3 
+- Online PDF Reader
+" As a student, I want online collaboration on my PDF documents, so that I can work on it with my work group partners online"
+- Augmented Reality Set
+ " As a technology enthusiast, I want a new AR toy, to fuel my hobby"
+
+D1.6
+Example:
+Coffee machine
+Big organisation - “Have a test coverage of 99% and complete integration and unit testing before
+deploying new version every Friday”
+Small organisation - “Ensure unit testing is done on every new updated class that is pushed in the
+repository”
+
+• An interactive sudoku playing app.
+- Big organisation - “Before release new function, it is necessary to be approved and reviewed test results by Manager and this test coverage is 99%.”
+- Small Organization - send out demos to firends and family and see whether they enjoy the game.
+• A PDF reader.
+- Big organisation - “Hae a test coverage of 99.9% and Unit and Integration test is done by a week before the product release.”
+- Small Organization - ensure the current version runs smooth for any size of document.
+• Airbnb
+- Big organisation - “Have a test coverage of 99% and Acceptance test is finished by monthly release.”
+- Small Organization - get user reviews about the ease of use of the app and base further development upon that.
